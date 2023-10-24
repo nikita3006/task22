@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Appointment Data</title>
+  </head>
+  <body>
+    <section class="container">
+      <form  id="my-form" onsubmit="saveToLocalStorage(event)">
+        <div class="msg"></div>
+          <label for="name">Name:</label>
+          <input type="text" id="name">
+
+          <label for="email">Email:</label>
+          <input type="text" id="email">
+
+          <label for="mobile">Phone Number:</label>
+          <input type="number" id="mobile">
+
+
+        <input class="btn" type="submit" value="Submit">
+      </form>
+
+      <ul id="users"></ul>
+
+    </section>
+
+
+    <ul id="listOfUsers"></ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js"></script>
+    <script src="Appointment.js"></script>
+  </body>
+</html>
